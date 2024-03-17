@@ -1,0 +1,44 @@
+package Usuario;
+
+public class TesteUsuario {
+
+	public static void main(String[] args) {
+		
+	  Usuario usuario = new Usuario() ;
+	  
+	  usuario.setNomeCompleto("");
+	  usuario.setNrCPF("");
+	  usuario.setCdUsuario("");
+      usuario.setDsSexo('M');
+      usuario.setDsProfissao("");
+      usuario.setDsEmail("");
+       
+		
+	  
+	  System.out.println("Nome do usuario: " + usuario.getNomeCompleto( );
+	  System.out.println("CPF do usuario: " + usuario.getNrCPF() );
+	  System.out.println("cdUsuario do usuario: " + usuario.getCdUsuario() );
+	  System.out.println("Sexo do usuario: " + usuario.getDsSexo() );
+	  System.out.println("Profissão do usuario: " + usuario.getDsProfissao() );
+	  System.out.println("Email do usuario: " + usuario.getDsEmail() );
+	  
+	  
+     
+      usuario.cadastrarEndereco("Rua Exemplo", 123, "Bairro Exemplo", "Cidade Exemplo", "Estado Exemplo", "12345-678");
+      
+
+      usuario.cadastrarTelefone(123456789);
+
+      usuario.cadastrarCarteira(100.0);
+      
+     
+      usuario.cadastrarCartaoDeCredito(987654321);
+      
+
+      usuario.cadastrarBanco("Banco XYZ");
+	  
+
+
+	}
+
+}
